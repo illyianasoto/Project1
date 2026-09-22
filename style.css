@@ -1,30 +1,120 @@
-/* Root typography settings */
-html{
-/*   set the following properties: 
-  font-size - this will be the base font size for the site
-  font-family - this will be the base font-family for the site
-  line-height - base line height, generally should be in the range 1.5-1.8 
-  color- primary text color for the site
-  background-color - primary background color for the site */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap");
 
-  
+/* Generated design choices. Save as style.css and link it in each HTML head. */
+
+/* Root typography settings */
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #57233F;
+  background-color: #FFFFFF;
+}
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: center;           /* vertical centering */
+  padding: 1rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: 
+#333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: 
+#0066cc; /* hover color */
+}
+
+/* ------------- END Header styles  */
+body {
+  margin: 0;
 }
 
 /* General heading styles */
-/*set font styles for all of your headings, for example font-weight, line-height, font-family */
-h1, h2, h3, h4, h5, h6{
-  
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", sans-serif;
+  line-height: 1.2;
 }
 
 /* Specific element text styles */
-h1{
-  /*   this is the page title you may want to set the font-size and weight instead of relying on the default. */
+h1 {
+  font-size: 2.441rem;
 }
 
-h2{
-  /* secondary heading, also set font-size and weight (and others you may want)
+h2 {
+  font-size: 1.953rem;
 }
 
-p{
-  margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
+h3 {
+  font-size: 1.563rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #8C2F62;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: #67326F;
+}
+
+a:focus-visible {
+  outline: 3px solid #57233F;
+  outline-offset: 4px;
+}
+
+header, main, footer {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+button, .button {
+  color: #FFFFFF;
+  background-color: #8C2F62;
+}
+
+button:hover, .button:hover {
+  background-color: #67326F;
+}
+
+.alternate {
+  color: #57233F;
+  background-color: #F6E8F0;
+  padding: 2rem;
 }
